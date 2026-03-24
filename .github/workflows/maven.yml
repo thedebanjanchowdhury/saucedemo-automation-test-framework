@@ -6,7 +6,7 @@ on:
   pull_request:
     branches: ["**"]
   schedule:
-    - cron: '30 18 * * *'     # 00:00 IST = 18:30 UTC (IST is UTC+5:30)
+    - cron: '30 18 * * *'     # 00:00 IST = 18:30 UTC
 
 permissions:
   contents: write
@@ -32,7 +32,17 @@ jobs:
           java-version: '11'
           distribution: 'temurin'
 
-      # ── 3. Maven cache ─────────────────────────────────────────────────────
+      # ── 3. Node.js setup (required for Allure 3 CLI) ───────────────────────
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      # ── 4. Install Allure 3 CLI ────────────────────────────────────────────
+      - name: Install Allure 3
+        run: npm install -g allure@latest
+
+      # ── 5. Maven cache ─────────────────────────────────────────────────────
       - name: Cache Maven packages
         uses: actions/cache@v4
         with:
@@ -40,12 +50,12 @@ jobs:
           key: ${{ runner.os }}-m2-${{ hashFiles('**/pom.xml') }}
           restore-keys: ${{ runner.os }}-m2
 
-      # ── 4. Run tests ───────────────────────────────────────────────────────
+      # ── 6. Run tests ───────────────────────────────────────────────────────
       - name: Run tests
         run: mvn clean test -q
         continue-on-error: true   # let report generate even if tests fail
 
-      # ── 5. Fetch Allure history from gh-pages ──────────────────────────────
+      # ── 7. Fetch Allure history from gh-pages ──────────────────────────────
       - name: Fetch Allure history
         uses: actions/checkout@v4
         if: always()
@@ -54,17 +64,26 @@ jobs:
           ref: gh-pages
           path: gh-pages
 
-      # ── 6. Build Allure report ─────────────────────────────────────────────
-      - name: Generate Allure report
-        uses: simple-elf/allure-report-action@master
+      # ── 8. Copy history into results (for trend data) ─────────────────────
+      - name: Restore Allure history
         if: always()
-        with:
-          allure_results: target/allure-results
-          allure_report: allure-report
-          allure_history: allure-history
-          keep_reports: 30          # keep last 30 runs in trend chart
+        run: |
+          if [ -d "gh-pages/history" ]; then
+            cp -r gh-pages/history target/allure-results/history
+            echo "History restored from gh-pages"
+          else
+            echo "No previous history found, skipping"
+          fi
 
-      # ── 7. Publish to GitHub Pages ─────────────────────────────────────────
+      # ── 9. Generate Allure 3 report ────────────────────────────────────────
+      - name: Generate Allure 3 report
+        if: always()
+        run: |
+          allure generate target/allure-results --output allure-report --clean
+          echo "Allure 3 report generated at: allure-report/"
+          ls -la allure-report/
+
+      # ── 10. Deploy to GitHub Pages ─────────────────────────────────────────
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
         if: always()
@@ -72,11 +91,11 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_branch: gh-pages
           publish_dir: allure-report
-          commit_message: "ci: publish Allure report [${{ github.run_number }}] — ${{ github.event_name }}"
+          commit_message: "ci: Allure 3 report [${{ github.run_number }}] — ${{ github.event_name }}"
 
-      # ── 8. Print report URL ────────────────────────────────────────────────
+      # ── 11. Print report URL ───────────────────────────────────────────────
       - name: Report URL
         if: always()
         run: |
-          echo "✅ Allure report published:"
+          echo "✅ Allure 3 report published:"
           echo "https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}"
