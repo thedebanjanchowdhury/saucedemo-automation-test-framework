@@ -79,7 +79,7 @@ jobs:
       - name: Generate Allure 3 report
         if: always()
         run: |
-          allure generate target/allure-results --output allure-report --clean
+          allure generate --output allure-report target/allure-results
           echo "Allure 3 report generated at: allure-report/"
           ls -la allure-report/
 
