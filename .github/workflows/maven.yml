@@ -75,6 +75,11 @@ jobs:
             echo "No previous history found, skipping"
           fi
 
+      - name: Install Allure 3
+        run: |
+          npm install -g allure@latest
+          allure --version
+
       # ── 9. Generate Allure 3 report ────────────────────────────────────────
       - name: Generate Allure 3 report
         if: always()
