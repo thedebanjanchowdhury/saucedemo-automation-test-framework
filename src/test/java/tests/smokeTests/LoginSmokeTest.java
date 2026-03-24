@@ -4,6 +4,7 @@ import base.BaseTest;
 import io.qameta.allure.*;
 import io.qameta.allure.testng.Tag;
 import org.testng.Assert;
+import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 import pages.LoginPage;
@@ -18,7 +19,13 @@ public class LoginSmokeTest extends BaseTest {
        loginPage = new LoginPage(driver);
     }
 
-    @Test(description = "Valid login flow", groups = {"smoke"})
+    @AfterMethod
+    public void resetApp() {
+        driver.manage().deleteAllCookies();
+        driver.get("https://www.saucedemo.com/");
+    }
+
+    @Test(priority = 2, description = "Valid login flow", groups = {"smoke"})
     @Severity(SeverityLevel.CRITICAL)
     @TmsLink("TC-S01")
     @Tag("smoke")
@@ -28,7 +35,7 @@ public class LoginSmokeTest extends BaseTest {
                 "Malfunction in login redirection");
     }
 
-    @Test(description = "Login screen properly displayed", groups = {"smoke"})
+    @Test(priority = 1, description = "Login screen properly displayed", groups = {"smoke"})
     @Severity(SeverityLevel.CRITICAL)
     @TmsLink("TC-S02")
     @Tag("smoke")

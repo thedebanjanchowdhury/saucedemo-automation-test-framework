@@ -19,11 +19,11 @@ public class BaseTest {
         driver.get("https://www.saucedemo.com/");
     }
 
-    @AfterMethod
-    public void resetApp() {
-        driver.manage().deleteAllCookies();
-        driver.get("https://www.saucedemo.com/");
-    }
+//    @AfterMethod
+//    public void resetApp() {
+//        driver.manage().deleteAllCookies();
+//        driver.get("https://www.saucedemo.com/");
+//    }
 
     @AfterSuite
     public void teardown() {

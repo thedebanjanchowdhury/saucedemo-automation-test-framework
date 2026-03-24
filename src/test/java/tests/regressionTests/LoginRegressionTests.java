@@ -4,6 +4,7 @@ import base.BaseTest;
 import io.qameta.allure.*;
 import io.qameta.allure.testng.Tag;
 import org.testng.Assert;
+import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
@@ -18,6 +19,12 @@ public class LoginRegressionTests extends BaseTest {
     @BeforeClass
     public void pageSetUp() {
         loginPage = new LoginPage(driver);
+    }
+
+    @AfterMethod
+    public void resetApp() {
+        driver.manage().deleteAllCookies();
+        driver.get("https://www.saucedemo.com/");
     }
 
     @Test(description = "Login flow with locked out user", groups = {"regression"})

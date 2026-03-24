@@ -36,6 +36,7 @@ public class LoginPage extends BasePage {
     }
 
     public boolean isLoginPageDisplayed() {
+        wait.until(ExpectedConditions.urlToBe("https://saucedemo.com/"));
         return isElementDisplayed(loginButton)
                 && isElementDisplayed(usernameInput)
                 && isElementDisplayed(passwordInput);
