@@ -6,13 +6,10 @@ import io.qameta.allure.testng.Tag;
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 import org.testng.annotations.BeforeClass;
-import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 import pages.InventoryPage;
 import pages.LoginPage;
-
 import java.util.List;
-import java.util.Objects;
 
 @Epic("SauceDemo E2E")
 @Feature("Inventory")

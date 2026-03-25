@@ -7,6 +7,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 
 import java.util.List;
+import java.util.stream.Collectors;
 
 public class InventoryPage extends BasePage {
 
@@ -69,5 +70,12 @@ public class InventoryPage extends BasePage {
     public boolean hasCartButton() {
         WebElement cartBtn = driver.findElement(PAGE_CART_BTN);
         return cartBtn.isDisplayed();
+    }
+
+    public List<String> getProductNames() {
+        return driver.findElements(PRODUCT_NAME)
+                .stream()
+                .map(WebElement::getText)
+                .collect(Collectors.toList());
     }
 }
