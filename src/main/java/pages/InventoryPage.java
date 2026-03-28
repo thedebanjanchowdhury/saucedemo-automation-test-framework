@@ -5,6 +5,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.Select;
 
 import java.util.List;
 import java.util.stream.Collectors;
@@ -18,7 +19,7 @@ public class InventoryPage extends BasePage {
     private static final By PRODUCT_DESC            = By.className("inventory_item_desc");
     private static final By PRODUCT_PRICE           = By.className("inventory_item_price");
     private static final By PRODUCT_ATC_BTN         = By.xpath("//button[contains(text(),'Add to cart')]");
-    private static final By SORT_DROPDOWN           = By.className("select_container");
+    private static final By SORT_DROPDOWN           = By.className("product_sort_container");
     private static final By PAGE_CART_BTN           = By.id("shopping_cart_container");
 
 
@@ -78,4 +79,10 @@ public class InventoryPage extends BasePage {
                 .map(WebElement::getText)
                 .collect(Collectors.toList());
     }
+
+    public void sortProducts(String sortBy) {
+        Select select = new Select(driver.findElement(SORT_DROPDOWN));
+        select.selectByValue(sortBy);
+    }
+
 }
