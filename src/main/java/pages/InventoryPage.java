@@ -21,6 +21,7 @@ public class InventoryPage extends BasePage {
     private static final By PRODUCT_ATC_BTN         = By.xpath("//button[contains(text(),'Add to cart')]");
     private static final By SORT_DROPDOWN           = By.className("product_sort_container");
     private static final By PAGE_CART_BTN           = By.id("shopping_cart_container");
+    private static final By CART_BADGE              = By.className("shopping_cart_badge");
 
 
 
@@ -85,4 +86,29 @@ public class InventoryPage extends BasePage {
         select.selectByValue(sortBy);
     }
 
+    public List<Double> getProductPrices() {
+        return driver.findElements(PRODUCT_PRICE)
+            .stream()
+            .map(WebElement::getText)
+            .map(s -> s.replace("$", "").trim())
+            .map(Double::parseDouble)
+            .collect(Collectors.toList());
+    }
+
+    public void addToCart(WebElement product) {
+        product.findElement(PRODUCT_ATC_BTN).click();
+    }
+
+    public String getBtnText(WebElement card) {
+        return card.findElement(PRODUCT_ATC_BTN).getText();
+    }
+
+    public String getBadgeCount() {
+        return wait.until(ExpectedConditions.
+                visibilityOfElementLocated(CART_BADGE)).getText();
+    }
+
+    public void gotoProductPage(WebElement product){
+        product.findElement(PRODUCT_NAME).click();
+    }
 }
