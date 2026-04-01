@@ -1,1 +1,1 @@
-{"id":"9e81b7f0934c0e4a2017839125625ecb","fullName":"tests.regressionTests.InventoryRegressionTests.verifyAscendingPriceSort","name":"Sort by 'Price (low to high)' display product in ascending order","status":"passed","testResultsByEnv":{"default":"2828cfa91a5bbb347bba64f67028b585"}}
+{"id":"9e81b7f0934c0e4a2017839125625ecb","fullName":"tests.regressionTests.InventoryRegressionTests.verifyAscendingPriceSort","name":"Sort by 'Price (low to high)' display product in ascending order","status":"passed","testResultsByEnv":{"default":"95ce1965071dd64cbfdaf65245f0f2f7"}}
