@@ -1,1 +1,1 @@
-{"id":"3116cad0a83a13f7b72cc56701c15ed1","fullName":"tests.regressionTests.LoginRegressionTests.errorMessageCloseButtonFunctionality","name":"Error message close button functionality","status":"broken","testResultsByEnv":{"default":"a8f24f10e49e5066a865c8a337308917"}}
+{"id":"3116cad0a83a13f7b72cc56701c15ed1","fullName":"tests.regressionTests.LoginRegressionTests.errorMessageCloseButtonFunctionality","name":"Error message close button functionality","status":"passed","testResultsByEnv":{"default":"1f20762ab7fa127cfd316b64811dd849"}}
