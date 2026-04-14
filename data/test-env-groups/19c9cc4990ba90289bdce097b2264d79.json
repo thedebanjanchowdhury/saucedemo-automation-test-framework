@@ -1,1 +1,1 @@
-{"id":"19c9cc4990ba90289bdce097b2264d79","fullName":"tests.regressionTests.LoginRegressionTests.loginFlowWithWrongUsername","name":"Login with wrong username","status":"passed","testResultsByEnv":{"default":"4bb013968231972b5ba9cd1d3d6ba3fe"}}
+{"id":"19c9cc4990ba90289bdce097b2264d79","fullName":"tests.regressionTests.LoginRegressionTests.loginFlowWithWrongUsername","name":"Login with wrong username","status":"passed","testResultsByEnv":{"default":"7395df460ab059625508778399c531c7"}}
