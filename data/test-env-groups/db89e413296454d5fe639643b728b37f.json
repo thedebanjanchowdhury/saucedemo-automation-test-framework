@@ -1,1 +1,1 @@
-{"id":"db89e413296454d5fe639643b728b37f","fullName":"tests.smokeTests.InventorySmokeTest.productCardDisplaysRelevantInformation","name":"Product cards display relevant information","status":"broken","testResultsByEnv":{"default":"44f24fbf4147f3790910139c834fbeb2"}}
+{"id":"db89e413296454d5fe639643b728b37f","fullName":"tests.smokeTests.InventorySmokeTest.productCardDisplaysRelevantInformation","name":"Product cards display relevant information","status":"passed","testResultsByEnv":{"default":"bf96a0a1dceda44bd2dddce9976b2107"}}
