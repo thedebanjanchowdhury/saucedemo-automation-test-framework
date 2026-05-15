@@ -1,1 +1,1 @@
-{"id":"e398ede732c8ac94c40143f00d53d318","fullName":"tests.regressionTests.InventoryRegressionTests.verifyMultipleProductCartBadge","name":"Multiple product carted returns correct badge count","status":"broken","testResultsByEnv":{"default":"5429609ebec5664f870682814889e8f7"}}
+{"id":"e398ede732c8ac94c40143f00d53d318","fullName":"tests.regressionTests.InventoryRegressionTests.verifyMultipleProductCartBadge","name":"Multiple product carted returns correct badge count","status":"broken","testResultsByEnv":{"default":"2f701e6889eacfaf5da43bd73f88e312"}}
