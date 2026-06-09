@@ -1,1 +1,1 @@
-{"id":"499fbbbee4937987918835dde70c132e","fullName":"tests.regressionTests.LoginRegressionTests.loginFlowWithEmptyUsername","name":"Login with empty username","status":"passed","testResultsByEnv":{"default":"26399ac7c1fdaf750141632090309d04"}}
+{"id":"499fbbbee4937987918835dde70c132e","fullName":"tests.regressionTests.LoginRegressionTests.loginFlowWithEmptyUsername","name":"Login with empty username","status":"passed","testResultsByEnv":{"default":"5b68c5d051daa711f8743119d4118dd3"}}
