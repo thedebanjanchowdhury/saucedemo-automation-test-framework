@@ -1,1 +1,1 @@
-{"id":"81e95f7b5eb6d6deb61b6bf394968f40","fullName":"tests.regressionTests.InventoryRegressionTests.verifyCartBadge","name":"Add to cart increments cart bagde by 1","status":"passed","testResultsByEnv":{"default":"c63102936445d4cd4f89e3099e6a2a11"}}
+{"id":"81e95f7b5eb6d6deb61b6bf394968f40","fullName":"tests.regressionTests.InventoryRegressionTests.verifyCartBadge","name":"Add to cart increments cart bagde by 1","status":"passed","testResultsByEnv":{"default":"c2cdc3f60c3d55cd6f571ef7ce144095"}}
