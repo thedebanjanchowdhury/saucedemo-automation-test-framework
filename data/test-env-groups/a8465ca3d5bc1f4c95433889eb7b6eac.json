@@ -1,1 +1,1 @@
-{"id":"a8465ca3d5bc1f4c95433889eb7b6eac","fullName":"tests.regressionTests.InventoryRegressionTests.verifyProductNameCorrectRedirection","name":"Product name redirects to specific product page","status":"broken","testResultsByEnv":{"default":"7e021c14a80f43a6c654c668cb1f0f27"}}
+{"id":"a8465ca3d5bc1f4c95433889eb7b6eac","fullName":"tests.regressionTests.InventoryRegressionTests.verifyProductNameCorrectRedirection","name":"Product name redirects to specific product page","status":"broken","testResultsByEnv":{"default":"7e1d0ea8845d1cdb591059e7f49671d8"}}
