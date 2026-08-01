@@ -1,1 +1,1 @@
-{"id":"dced1947b5c8f337162df296dc27f235","fullName":"tests.regressionTests.InventoryRegressionTests.verifyCartButtonStateChange","name":"Verify add to cart button state change","status":"failed","testResultsByEnv":{"default":"52d7c3ab6b0154e54ea72e2ff16fe09b"}}
+{"id":"dced1947b5c8f337162df296dc27f235","fullName":"tests.regressionTests.InventoryRegressionTests.verifyCartButtonStateChange","name":"Verify add to cart button state change","status":"failed","testResultsByEnv":{"default":"1f70a0a62334d52abc946601ec535c0b"}}
