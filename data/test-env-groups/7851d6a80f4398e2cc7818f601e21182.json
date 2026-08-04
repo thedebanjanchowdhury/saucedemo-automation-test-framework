@@ -1,1 +1,1 @@
-{"id":"7851d6a80f4398e2cc7818f601e21182","fullName":"tests.regressionTests.LoginRegressionTests.loginFlowWithOtherUserTypes","name":"Login with other user types","status":"passed","testResultsByEnv":{"default":"d4d0374ba0728627f0183c2821ca8315"}}
+{"id":"7851d6a80f4398e2cc7818f601e21182","fullName":"tests.regressionTests.LoginRegressionTests.loginFlowWithOtherUserTypes","name":"Login with other user types","status":"passed","testResultsByEnv":{"default":"42c7560ca2fe77f519291016142c23c5"}}
