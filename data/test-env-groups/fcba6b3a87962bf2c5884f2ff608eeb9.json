@@ -1,1 +1,1 @@
-{"id":"fcba6b3a87962bf2c5884f2ff608eeb9","fullName":"tests.regressionTests.InventoryRegressionTests.verifyCartBtnStateChange2","name":"Remove button click converts button state to 'Add to cart'","status":"passed","testResultsByEnv":{"default":"bf44596a3840f8a2dcedfe82ae8e6c7e"}}
+{"id":"fcba6b3a87962bf2c5884f2ff608eeb9","fullName":"tests.regressionTests.InventoryRegressionTests.verifyCartBtnStateChange2","name":"Remove button click converts button state to 'Add to cart'","status":"passed","testResultsByEnv":{"default":"ed9b7cb63855c55eb1a8a709c4456736"}}
