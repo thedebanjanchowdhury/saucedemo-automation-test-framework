@@ -1,1 +1,1 @@
-{"id":"e450eb72042ef31a13aa8df4f4fe892e","fullName":"tests.regressionTests.InventoryRegressionTests.verifyDescendingNameSort","name":"Sort by 'Name (Z to A)' display product in descending order","status":"failed","testResultsByEnv":{"default":"44601ac09f1ec92124cf8a82fcc291c1"}}
+{"id":"e450eb72042ef31a13aa8df4f4fe892e","fullName":"tests.regressionTests.InventoryRegressionTests.verifyDescendingNameSort","name":"Sort by 'Name (Z to A)' display product in descending order","status":"failed","testResultsByEnv":{"default":"0e35eab2810e7ed081fe715713461e51"}}
