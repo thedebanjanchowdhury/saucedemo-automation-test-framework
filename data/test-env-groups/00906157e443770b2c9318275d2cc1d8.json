@@ -1,1 +1,1 @@
-{"id":"00906157e443770b2c9318275d2cc1d8","fullName":"tests.integrationTests.LoginIntegrationTests.directInventoryPageAccess","name":"Direct inventory page access","status":"passed","testResultsByEnv":{"default":"0ec6872dfcb2ccf9a83e4286d353f788"}}
+{"id":"00906157e443770b2c9318275d2cc1d8","fullName":"tests.integrationTests.LoginIntegrationTests.directInventoryPageAccess","name":"Direct inventory page access","status":"failed","testResultsByEnv":{"default":"49762763d4a960cd27c7ebac7a110c18"}}
