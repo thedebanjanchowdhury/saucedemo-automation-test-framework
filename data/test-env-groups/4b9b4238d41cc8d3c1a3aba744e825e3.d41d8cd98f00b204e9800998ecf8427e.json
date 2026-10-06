@@ -1,1 +1,1 @@
-{"id":"4b9b4238d41cc8d3c1a3aba744e825e3.d41d8cd98f00b204e9800998ecf8427e","fullName":"tests.integrationTests.LoginIntegrationTests.restrictBrowserBackAfterLogin","name":"Restrict browser back after login","status":"failed","testResultsByEnv":{"default":"037f20a758e99e4bfcfd5a9198327634"}}
+{"id":"4b9b4238d41cc8d3c1a3aba744e825e3.d41d8cd98f00b204e9800998ecf8427e","fullName":"tests.integrationTests.LoginIntegrationTests.restrictBrowserBackAfterLogin","name":"Restrict browser back after login","status":"failed","testResultsByEnv":{"default":"b8cba9d422f979dbb280dccbe221e4ef"}}
