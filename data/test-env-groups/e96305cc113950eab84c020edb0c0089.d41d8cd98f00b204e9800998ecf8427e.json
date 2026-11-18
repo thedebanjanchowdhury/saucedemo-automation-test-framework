@@ -1,1 +1,1 @@
-{"id":"e96305cc113950eab84c020edb0c0089.d41d8cd98f00b204e9800998ecf8427e","fullName":"tests.regressionTests.LoginRegressionTests.loginFlowWithEmptyPassword","name":"Login with empty password","status":"passed","testResultsByEnv":{"default":"a67dade7621aacc4f505baae9cfca4e6"}}
+{"id":"e96305cc113950eab84c020edb0c0089.d41d8cd98f00b204e9800998ecf8427e","fullName":"tests.regressionTests.LoginRegressionTests.loginFlowWithEmptyPassword","name":"Login with empty password","status":"passed","testResultsByEnv":{"default":"89540b1090210b5fc60d746d45a2df7e"}}
