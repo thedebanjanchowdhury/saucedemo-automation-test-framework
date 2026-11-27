@@ -1,1 +1,1 @@
-{"id":"41c26754f6ff59f899ce774f48a85b74.d41d8cd98f00b204e9800998ecf8427e","fullName":"tests.regressionTests.LoginRegressionTests.loginFlowWithBothEmptyFields","name":"Login with both empty fields","status":"passed","testResultsByEnv":{"default":"d02186af853624564512051a6d801c79"}}
+{"id":"41c26754f6ff59f899ce774f48a85b74.d41d8cd98f00b204e9800998ecf8427e","fullName":"tests.regressionTests.LoginRegressionTests.loginFlowWithBothEmptyFields","name":"Login with both empty fields","status":"passed","testResultsByEnv":{"default":"af74298e58a0f3ca206fd905db0f51a8"}}
